@@ -1,19 +1,17 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  line-height: 1.6;
-}
-
+/* Main Header Section */
 .mainmenu {
-  background-color: #6f4e37;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -27,19 +25,21 @@ body {
 
 .text-content h1 {
   font-size: 2.5rem;
-  color: #fff;
+  font-weight: bold;
+  color: #333;
   margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .text-content p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 1rem 0;
-  color: #e0d9d1;
+  color: #666;
 }
 
 .btn {
   display: inline-block;
-  background: #ff8000;
+  background: #a5683c;
   color: #fff;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
@@ -49,37 +49,54 @@ body {
 }
 
 .btn:hover {
-  background: #e67300;
+  background: #8e5833;
 }
 
 .img {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
 }
 
-.image-1,
-.image-2 {
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.image-2 {
+.circle {
   position: absolute;
-  top: 50%;
-  right: -40px;
-  transform: translateY(-50%);
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-/* Stats Section */
+.circle-1 {
+  width: 350px;
+  height: 350px;
+  background-color: #f3e1d4;
+  top: 10;
+  left: 40%;
+  transform: translate(-50%, 0);
+}
+
+.circle-2 {
+  width: 250px;
+  height: 250px;
+  background-color: #d9e6e3;
+  bottom: -280px;
+  right: 25%;
+  transform: translate(50%, 0);
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .stats {
   display: flex;
   justify-content: space-around;
-  background: #fff;
+  background: #f9f9f9;
   padding: 2rem 1rem;
   text-align: center;
-  border-top: 3px solid #6f4e37;
+  border-top: 3px solid #ddd;
 }
 
 .stat h3 {
@@ -92,7 +109,6 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Gallery Section */
 .gallery {
   text-align: center;
   padding: 2rem 1rem;
@@ -120,4 +136,5 @@ body {
 .gallery p {
   margin-top: 1rem;
   font-style: italic;
+  color: #666;
 }
