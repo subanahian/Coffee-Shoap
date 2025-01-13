@@ -46,6 +46,7 @@
   text-decoration: none;
   font-weight: bold;
   margin-top: 1rem;
+  border-radius: 9999px;
 }
 
 .btn:hover {
@@ -97,7 +98,7 @@
   padding: 2rem 1rem;
   text-align: center;
   border-top: 3px solid #ddd;
-  border-radius: 999px;
+  border-radius: 9999px;
 }
 
 .stat h3 {
